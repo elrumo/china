@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,700');
 
+
+
 body{
   font-family: 'IBM Plex Mono', monospace;
-  background-color: #242428;
-  color: #E1DDDE;
+  /* background-color: #242428;
+  color: #E1DDDE; */
   margin: 0;
 }
 
@@ -23,7 +25,17 @@ body{
 
 .hero-img{
   background-image: url("../imgs/china.jpg");
+}
 
+a{
+   text-decoration: none;
+   color: inherit;
+   font-weight: 400;
+   transition: 0.1s;
+}
+
+a:hover{
+  font-weight: 600;
 }
 
 .hero-img-mask{
@@ -93,7 +105,7 @@ body{
   margin-left: auto;
   margin-right: auto;
   transform: translateY(50px);
-  box-shadow: 0 20px 80px -30px rgba(0,0,0,0.35);
+  /* box-shadow: 0 20px 80px -30px rgba(0,0,0,0.35); */
 }
 
 .img-gallery-wrapper{
@@ -128,161 +140,15 @@ body{
   height: 410px;
 }
 
-/* #column2{
-  transform: translateY(250px);
-}
-
-#column3{
-  transform: translateY(150px);
-} */
-
-#gallery1{
-  left: -20px;
-  width: 25%;
-  min-width: 310px;
-  }
-
-  #gallery2{
-    left: -50px;
-    top: 25px;
-    z-index: 1;
-    min-width: 200px;
-    width: 230px;
-  }
-
-  #gallery3{
-    left: -11%;
-    top: -35px;
-    z-index: 0;
-    width: 25%;
-    min-width: 470px;
-  }
-
-  #gallery4{
-    left: 10px;
-    z-index: 2;
-    min-width: 310px;
-  }
-
-  #gallery5{
-    left: 9px;
-    top: -10px;
-    z-index: 0
-  }
-
-  #gallery6{
-    z-index: 4;
-    top: -80px;
-    min-width: 280px;
-  }
-  #gallery7{
-    z-index: 3;
-    min-width: 350px;
-    left: -65px;
-    top: -105px;
-    margin-bottom: -100%;
-  }
-  #gallery8{
-    z-index: 3;
-    left: -122px;
-    top: -195px;
-    min-width: 432px;
-  }
-  #gallery9{
-    z-index: 0;
-    top: 19px;
-    left: -291px;
-    min-width: 400px;
-  }
-  #gallery10{
-    z-index: 1;
-    top: -19px;
-    left: -191px;
-    min-width: 310px;
-  }
-  #gallery11{
-    z-index: 2;
-    top: -498px;
-    left: 90px;
-    min-width: 220px;
-  }
-  #gallery12{
-    z-index: 1;
-    top: -90px;
-    left: 0px;
-    min-width: 300px;
-  }
-  #gallery13{
-    z-index: 2  ;
-    top: -5px;
-    left: -30px;
-    min-width: 331px;
-    margin-bottom: -100%;
-  }
-  #gallery14{
-    z-index: 0;
-    top: -150px;
-    left: -40px;
-    min-width: 460px;
-  }
-  #gallery15{
-    z-index: 1;
-    top: 124px;
-    left: -310px;
-    min-width: 340px;
-  }
-  #gallery16{
-    z-index: 2;
-    top: -167px;
-    left: 117px;
-    min-width: 180px;
-  }
-  #gallery17{
-    z-index: 0;
-    top: -270px;
-    left: 0px;
-    min-width: 400px;
-  }
-  #gallery18{
-    z-index: 0;
-    top: -30px;
-    left: 60px;
-    min-width: 520px;
-  }
-  #gallery19{
-    z-index: 1;
-    top: -490px;
-    left: 280px;
-    min-width: 600px;
-  }
-  #gallery20{
-    z-index: 1;
-    top: -90px;
-
-    min-width: 280px;
-  }
-
-  #gallery21{
-    z-index: 1;
-    top: -90px;
-    left: -10px;
-    min-width: 600px;
-    margin-bottom: 0;
-  }
-  }
-
-li {
-  list-style: none;
-}
-
 .stripGallery{
   /* padding-top: 100px; */
 }
 
 .strip{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 10px;
+  grid-row-gap: 10px;
   width: 85%;
   max-width: 1500px;
   position: relative;
@@ -298,7 +164,7 @@ li {
 
 .columnImages{
   width: 100%;
-  margin-bottom: 8px;
+  padding-bottom: 7px;
   width: 100%;
 }
 
@@ -325,4 +191,29 @@ source{
   font-size: 18px;
   font-size: 1.125rem;
   margin: 0;
+}
+
+.aboutMe{
+  position: relative;
+  font-size: 1em;
+  text-align: center;
+  margin-top: -120px;
+  padding-bottom: 30px;
+}
+
+.aboutMe a{
+  font-weight: 600;
+  font-size: 1.5em;
+  text-decoration: underline black;
+  transition: 0.2s;
+}
+
+.aboutMe a:hover{
+  opacity: 0.5;
+}
+
+.aboutMe i{
+  font-weight: 400;
+  font-size: 1.5em;
+  opacity: 0.2;
 }
