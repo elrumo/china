@@ -163,7 +163,6 @@ a:hover{
 }
 
 .columnImages{
-  width: 100%;
   padding-bottom: 7px;
   width: 100%;
 }
@@ -191,6 +190,7 @@ source{
   font-size: 18px;
   font-size: 1.125rem;
   margin: 0;
+  padding-top: 10px;
 }
 
 .aboutMe{
