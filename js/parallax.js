@@ -7,7 +7,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     $('.parallax-h1').css('top', (scrollTop * -0.3) + 'px');
 
     // $('.about-img').css('top', (scrollTop * -0.13 ) + 'px');
-    $('.parallax-about-img').css('top', (scrollTop * -0.13 ) + 'px');
+    $('.parallax-about-img').css('top', (scrollTop * -0.2 ) + 'px');
 
     // $('#column2').css('top', (scrollTop * -0.1) + 'px');
     // $('#column3').css('top', (scrollTop * -0.05) + 'px');
