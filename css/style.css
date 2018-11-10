@@ -240,8 +240,8 @@ source{
 
   .hero-img-mask {
     background-image: url("../imgs/mask.png");
-    background-size: 400% !important;
-    background-position: 75% 100%;
+    background-size: 310% !important;
+    background-position: 85% 100%;
   }
 
   .hero-wrapper{
