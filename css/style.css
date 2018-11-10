@@ -25,6 +25,10 @@ body{
   background-image: url("../imgs/china.jpg");
 }
 
+.shadow{
+  display: none;
+}
+
 a{
    text-decoration: none;
    color: inherit;
@@ -37,7 +41,7 @@ a:hover{
 }
 
 .hero-img-mask{
-  z-index: 2;
+  z-index: 3;
   background-image: url("../imgs/mask.png");
   background-size: 100% !important;
   background-position: bottom;
@@ -46,17 +50,17 @@ a:hover{
 .parallax-h1{
   position: absolute;
   height: 100vh;
-  left: 3%;
+  left: 4%;
 }
 
 .hero-title{
   position: absolute;
   font-weight: 700;
-  font-size: 18em;
-  z-index: 1;
+  font-size: 20vw;
+  z-index: 2;
   color: white;
   margin: 0;
-  bottom: 70px;
+  bottom: 10%;
 }
 
 .about-wrapper{
@@ -128,10 +132,6 @@ a:hover{
   border: 0;
   display: inline-block;
   padding-bottom: 7px;
-}
-
-.img-gallery-wrapper img:hover{
-  z-index: 100;
 }
 
 .grid-two-imgs{
@@ -221,4 +221,50 @@ source{
 
 .crop{
   margin-top: -3.8px;
+}
+
+/* No greater than 900px, no less than 400px */
+@media (min-width:1500px) {
+
+/* CHINA title */
+  .hero-title{
+    bottom: 10%;
+  }
+}
+
+@media (min-width: 600px) and (orientation:portrait){
+
+  .hero-img-mask {
+    background-image: url("../imgs/mask.png");
+    background-size: 400% !important;
+    background-position: 75% 100%;
+  }
+
+  .hero-wrapper{
+    position: relative;
+    height: 100vh;
+  }
+
+  .hero-title{
+    bottom: 65%;
+    font-size: 30vw;
+  }
+
+  .shadowWrapper{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  .shadow{
+    position: absolute;
+    display: block;
+    z-index: 1;
+    bottom: 6%;
+    height: 25vw;
+    width: auto;
+    left: 54%;
+    transform: translateX(-50%);
+    }
 }
