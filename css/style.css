@@ -181,14 +181,14 @@ source{
 
 .columnTextWrap h1{
   font-weight: 700;
-  font-size: 300%;
+  font-size: 3em;
   margin: 0;
 }
 
 .columnTextWrap h2{
   font-weight: 400;
   font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 1.125em;
   margin: 0;
   padding-top: 10px;
 }
@@ -281,8 +281,8 @@ source{
 
   .about-body{
     font-weight: 300;
-    font-size: 0.8em;
-    line-height: auto;
+    font-size: 1em;
+    line-height: 1.2em;
   }
 
   .parallax-about-img{
@@ -299,6 +299,11 @@ source{
     text-align: left;
     left: 50%;
     transform: translateX(-50%);
+    font-size: 2em;
+  }
+
+  .columnTextWrap h2{
+    font-size: 1em;
   }
 
   .strip{
