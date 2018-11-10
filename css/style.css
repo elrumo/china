@@ -283,9 +283,13 @@ source{
   }
 
   .about-body{
-    font-weight: 300;
+    font-weight: 400;
     font-size: 2em;
     line-height: 1.3em;
+  }
+
+  .about-body a{
+    font-weight: 500;
   }
 
   .parallax-about-img{
