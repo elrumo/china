@@ -238,6 +238,10 @@ source{
 
 @media (min-width: 600px) and (orientation:portrait){
 
+  body{
+    font-size: 1.5em;
+  }
+
   .hero-img-mask {
     background-image: url("../imgs/mask.png");
     background-size: 310% !important;
