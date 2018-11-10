@@ -79,7 +79,6 @@ a:hover{
 
 .about-text-wrapper{
   padding-right: 20px;
-  /* transform: translatey(25%); */
 }
 
 .about-h1{
@@ -250,21 +249,55 @@ source{
     font-size: 30vw;
   }
 
-  .shadowWrapper{
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    position: absolute;
+
+  .about-wrapper{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    width: 85%;
+    max-width: 1150px;
+    min-width: 800px;
+    left: 50%;
+    transform: translatex(-50%);
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 130px;
   }
 
-  .shadow{
-    position: absolute;
-    display: block;
-    z-index: 1;
-    bottom: 6%;
-    height: 25vw;
-    width: auto;
-    left: 54%;
-    transform: translateX(-50%);
-    }
+  .about-text-wrapper{
+    padding-right: 20px;
+  }
+
+  .about-h1{
+    font-weight: 700;
+    font-size: 2.5em;
+    padding-bottom: 20px;
+  }
+
+  .about-body{
+    font-weight: 300;
+    font-size: 0.8em;
+    line-height: auto;
+  }
+
+  .parallax-about-img{
+    display: none;
+  }
+
+  .img-gallery-wrapper{
+    position: relative;
+    list-style: none;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    max-width: 1500px;
+    margin-bottom: 130px;
+  }
+
 }
