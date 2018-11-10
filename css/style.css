@@ -262,7 +262,7 @@ source{
     position: relative;
     display: grid;
     grid-template-columns: auto;
-    width: 85%;
+    width: 90%;
     max-width: 1150px;
     min-width: 800px;
     left: 50%;
@@ -292,6 +292,14 @@ source{
     font-weight: 800;
   }
 
+  .img-gallery-wrapper{
+    width: 90%
+  }
+
+  .strip{
+    width: 90%;
+  }
+
   .parallax-about-img{
     display: none;
   }
@@ -318,7 +326,7 @@ source{
   }
 
   .aboutMe{
-    width: 85%;
+    width: 90%;
     left: 50%;
     transform: translateX(-50%);
     padding-bottom: 100px;
