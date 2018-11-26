@@ -30,14 +30,14 @@ body{
 }
 
 a{
-   text-decoration: none;
+   text-decoration: underline;
    color: inherit;
    font-weight: 400;
-   transition: 0.1s;
 }
 
 a:hover{
-  font-weight: 600;
+  font-weight: 500;
+  color: red;
 }
 
 .hero-img-mask{
@@ -68,17 +68,17 @@ a:hover{
   display: grid;
   grid-template-columns: auto auto;
   width: 85%;
-  max-width: 1150px;
+  max-width: 1500px;
   min-width: 800px;
   left: 50%;
   transform: translatex(-50%);
   height: auto;
   margin-top: 230px;
-  margin-bottom: 130px;
+  margin-bottom: 100px;
 }
 
 .about-text-wrapper{
-  padding-right: 20px;
+  width: 75%;
 }
 
 .about-h1{
@@ -154,7 +154,7 @@ a:hover{
   position: relative;
   left: 50%;
   transform: translate3d(-50%, 0, 0);
-  padding-bottom: 200px;
+  padding-bottom: 120px;
   }
 
 .column{
@@ -188,7 +188,6 @@ source{
 .columnTextWrap h2{
   font-weight: 400;
   font-size: 18px;
-  font-size: 1.125em;
   margin: 0;
   padding-top: 10px;
 }
@@ -204,12 +203,7 @@ source{
 .aboutMe a{
   font-weight: 600;
   font-size: 1.5em;
-  text-decoration: underline black;
-  transition: 0.2s;
-}
-
-.aboutMe a:hover{
-  opacity: 0.5;
+  text-decoration: underline;
 }
 
 .aboutMe i{
@@ -234,12 +228,51 @@ source{
   .hero-title{
     bottom: 10%;
   }
+
 }
 
-@media (min-width: 600px) and (orientation:portrait){
+@media only screen and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
 
   body{
-    font-size: 1.2em;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .about-wrapper{
+    grid-template-columns: auto auto;
+  }
+
+  .about-text-wrapper{
+    width: 90%;
+  }
+
+  .about-img{
+    transform: translateY(40px);
+  }
+
+  .about-wrapper{
+    margin-top: 100px;
+  }
+
+  .img-gallery-wrapper{
+  }
+
+  .hero-wrapper{
+    height: 100vh;
+  }
+
+  .hero-title{
+    bottom: 4%;
+    font-size: 24vw;
+  }
+
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 767px) and (orientation : portrait) {
+
+  body{
+    -webkit-text-size-adjust: 100%;
   }
 
   .hero-img-mask {
@@ -254,7 +287,7 @@ source{
   }
 
   .hero-title{
-    bottom: 65%;
+    bottom: 63%;
     font-size: 30vw;
   }
 
@@ -268,12 +301,15 @@ source{
     left: 50%;
     transform: translatex(-50%);
     height: auto;
-    margin-top: 100px;
-    margin-bottom: 130px;
+    margin-top: 130px;
+    margin-bottom: 40px;
   }
 
   .about-text-wrapper{
     padding-right: 20px;
+    font-weight: 200;
+    width: 90%;
+    padding-bottom: 120px;
   }
 
   .about-h1{
@@ -284,8 +320,9 @@ source{
 
   .about-body{
     font-weight: 400;
-    font-size: 2em;
-    line-height: 1.5em;
+    font-size: 40px;
+    line-height: 1.6em;
+    width: 105%;
   }
 
   .about-body a{
@@ -300,7 +337,9 @@ source{
     width: 90%;
   }
 
-  .parallax-about-img{
+  .about-img{
+    /* max-width: 100%;
+    transform: translateY(0); */
     display: none;
   }
 
@@ -318,7 +357,7 @@ source{
   }
 
   .columnTextWrap h2{
-    font-size: 1em;
+    font-size: 40px;
   }
 
   .strip{
@@ -330,13 +369,6 @@ source{
     left: 50%;
     transform: translateX(-50%);
     padding-bottom: 100px;
-  }
-
-  .aboutMe i{
-    position: relative;
-    transform: translateX(-10%);
-    padding-top: 40px;
-    font-size: 5em;
-    opacity: 0.5;
+    font-size: 2.5em;
   }
 }
