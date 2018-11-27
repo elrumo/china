@@ -42,7 +42,7 @@ a:hover{
 
 .hero-img-mask{
   z-index: 3;
-  background-image: url("../imgs/mask.png");
+  /* background-image: url("../imgs/mask.png"); */
   background-size: 100% !important;
   background-position: bottom;
 }
